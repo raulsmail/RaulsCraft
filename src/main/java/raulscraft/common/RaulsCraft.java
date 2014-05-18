@@ -2,6 +2,7 @@ package raulscraft.common;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
+import raulscraft.common.core.CommonProxy;
 
 /**
  * Created by raulsmail on 18/05/2014.
@@ -14,6 +15,6 @@ public class RaulsCraft {
     @Mod.Instance("RaulsCraft")
     public static RaulsCraft instance;
 
-    @SidedProxy(clientSide = "raulscraft.client.core.ClientProxy", serverSide = "itfellfromthesky.common.core.CommonProxy")
+    @SidedProxy(clientSide = "raulscraft.client.core.ClientProxy", serverSide = "raulscraft.common.core.CommonProxy")
     public static CommonProxy proxy;
 }
