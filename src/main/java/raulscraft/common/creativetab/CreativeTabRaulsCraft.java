@@ -15,6 +15,6 @@ public class CreativeTabRaulsCraft extends CreativeTabs
     @Override
     public Item getTabIconItem()
     {
-        return Item.getItemFromBlock(RaulsCraft.blueStone);
+        return Item.getItemFromBlock(RaulsCraft.blockBlueStone);
     }
 }
