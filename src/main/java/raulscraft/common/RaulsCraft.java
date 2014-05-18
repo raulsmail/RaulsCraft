@@ -5,6 +5,8 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.block.Block;
+import net.minecraft.creativetab.CreativeTabs;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,7 +16,8 @@ import raulscraft.common.core.CommonProxy;
  * Created by raulsmail on 18/05/2014.
  */
 @Mod(modid = "RaulsCraft", name = "RaulsCraft",
-        version = RaulsCraft.version)
+        version = RaulsCraft.version,
+        dependencies = "required-after:Forge@[10.12.1.1081,)")
 public class RaulsCraft {
     public static final String version = "0.1.0";
 
@@ -25,6 +28,10 @@ public class RaulsCraft {
     public static CommonProxy proxy;
 
     private static final Logger logger = LogManager.getLogger("RaulsCraft");
+
+    public static Block blockBlueStone;
+
+    public static CreativeTabs creativeTabBlocks;
 
     @Mod.EventHandler
     public void preLoad(FMLPreInitializationEvent event)
