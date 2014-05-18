@@ -2,7 +2,6 @@
 {
   "modid" : "RaulsCraft",
   "name" : "RaulsCraft",
-  "version" : "${version}",
   "url" : "http://raulsmail.github.io/",
   "credits" : "",
   "authors": [
